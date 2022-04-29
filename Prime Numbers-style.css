@@ -1,0 +1,167 @@
+body {
+    height: 100%;
+    background-attachment: fixed;
+}
+
+#enterBtnDiv {
+    text-align: center;
+    margin: 10px;
+}
+.enterBtn {
+    background:#0000;
+    width: 85%;
+    padding: 10px 15px 15px;
+    color: #000;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    border-radius: 15px;
+    border: 1px solid #fffb;
+    outline: none;
+    text-shadow: -1px 0 #fff, -2px 0 #000;
+}
+.glowBtn {
+    border: 0;
+    box-shadow: inset 2px 2px 5px #fff,
+                inset -1px -1px 5px #000,
+                4px 4px 10px #000;
+}
+
+.enterBtn:active {
+    box-shadow: -2px -2px 5px #fff,
+                inset 4px 4px 10px #000,
+                inset -2px -2px 5px #fff,
+                4px 4px 10px #000;
+    color: #645002;
+}
+
+#selectDiv {
+    text-align: center;
+    margin: 10px;
+}
+
+select {
+    background:#bbb;
+    color: #000;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 0;
+    outline: none;
+    box-shadow: inset 2px 2px 5px #fff,
+                inset -1px -1px 5px #000,
+                4px 4px 10px #000;
+}
+select:active {
+    box-shadow: -2px -2px 5px #fff,
+                inset 4px 4px 5px #000,
+                inset -2px -2px 5px #fff,
+                4px 4px 10px #000;
+}
+
+option {
+    background:#ddd;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.sections {
+    background: #0004;
+    display: none;
+    animation: showPN 1s;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: inset 2px 2px 5px #fff,
+                inset -2px -2px 5px #000,
+                2px 2px 5px 1px #000;
+}
+
+.show {
+    display: block;
+}
+
+h3 {
+    display: inline-block;
+    color: #000;
+    margin: 5px auto;
+    line-height: 1.8rem;
+}
+
+input {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    background: radial-gradient(circle at 50%, #0001, #0009);
+    font-size: 1.2rem;
+    width: 75px;
+    border: 0;
+    border-radius: 5px;
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input:focus{
+    outline: none;
+}
+
+hr {
+    border: 1px dashed #000;
+}
+
+#table1, #table2, #table3, #table4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding-bottom: 10px;
+}
+
+p {
+    flex: 1 0 20%;
+    text-align: center;
+    padding: 5px;
+    margin:0;
+    border-radius: 5px;
+    background: radial-gradient(circle at 50%, #0009, #0001);
+    color:#fff;
+    font-weight: bold;
+    animation: showPN 1s;
+}
+@keyframes showPN {
+    from {transform: rotateY(90deg);}
+}
+
+@media only screen and (max-width: 650px) {
+    #container {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .sections {
+        margin: 10px auto;
+    }
+    .enterBtn {
+        letter-spacing: 5px;
+        line-height: 25px;
+        font-size: 1.5rem;
+    }
+    select {
+        width: 80%;
+        white-space:pre-wrap;
+        height: 60px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    select {
+        height: 75px;
+    }
+}

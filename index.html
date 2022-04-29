@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+    <link rel="stylesheet" href="Prime Numbers-style.css">
+</head>
+<body>
+    <div id="enterBtnDiv">
+        <button class="enterBtn" type="button">Prime Numbers</button>
+    </div>
+    <div id="selectDiv">
+        <select id="select">
+            <option value="title" selected="selected">choose the way you want to calculate the prime numbers with</option>
+            <option value="a">Calculate the prime numbers up to N</option>
+            <option value="b">Calculate the prime numbers between N and M</option>
+            <option value="c">Calculate the first N prime numbers</option>
+            <option value="d">Calculate the first N prime numbers starting from M</option>
+            <option value="all">All the above options together</option>
+        </select>
+    </div>
+    <div id="container">
+        <!-- section 1 -->
+        <div class="sections section1">
+            <div class="sec-header">
+                <h3>The prime numbers up to 
+                    <span>
+                        <input type="number" id="input1" autofocus
+                        >
+                    </span>
+                    <span id="countPN"> are: </span>
+                </h3>
+            </div>
+            <hr>
+            <div id="table1"></div>
+        </div>
+        
+        <!-- section 2 -->
+        <div class="sections section2">
+            <div class="sec-header">
+                <h3 class="sec2Txt">The prime numbers between 
+                    <span>
+                        <input type="number" id="input2a">
+                    </span> and 
+                    <span>
+                        <input type="number" id="input2b">
+                    </span>
+                    are: 
+                </h3>
+            </div>
+            <hr>
+            <div id="table2"></div>
+        </div>
+
+        <!-- section 3 -->
+        <div class="sections section3">
+            <div class="sec-header">
+                <h3 class="sec3Txt">The first 
+                    <span>
+                        <input type="number" id="input3">
+                    </span>
+                    prime numbers are:
+                </h3>
+            </div>
+            <hr>
+            <div id="table3"></div>
+        </div>
+
+        <!-- section 4 -->
+        <div class="sections section4">
+            <div class="sec-header">
+                <h3 class="sec3Txt">The 
+                    <span>
+                        <input type="number" id="input4a">
+                    </span> prime numbers starting from
+                    <span>
+                        <input type="number" id="input4b">
+                    </span>
+                    are: 
+                </h3>
+            </div>
+            <hr>
+            <div id="table4"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Prime Numbers-script.js"></script>
+</body>
+</html>

@@ -25,6 +25,7 @@ body {
     box-shadow: inset 2px 2px 5px #fff,
                 inset -1px -1px 5px #000,
                 4px 4px 10px #000;
+    cursor: pointer;
 }
 
 .enterBtn:active {
